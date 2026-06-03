@@ -1,0 +1,14 @@
+The Borromean rings cannot be expressed as a Graph2Braid.py JSON input.
+
+Reason: the paper's algorithm (triangular graphs) outputs braids in B_{2m}
+(even number of strands). The Borromean rings is naturally the trace closure
+of (sigma_1 sigma_2^{-1})^3 in B_3 (three strands — odd), so no triangular
+or circular graph in the paper's framework produces it directly.
+
+The closest representation is the Markov stabilisation
+
+  (sigma_1 . sigma_2^{-1})^3 . sigma_3   in B_4
+
+whose trace closure is still the Borromean rings (3 components,
+all pairwise linking numbers = 0). This is hard-coded as Cell 4
+in braid_calculator.py.
