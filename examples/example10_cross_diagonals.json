@@ -1,0 +1,10 @@
+{
+  "description": "Example 10: Rectangle — cross diagonals only",
+  "vertices": [[0,0],[1,0],[0,1],[1,1]],
+  "edges": [
+    [[0,0],[1,0]],
+    [[0,1],[1,1]],
+    [[1,0],[0,1]],
+    [[0,0],[1,1]]
+  ]
+}

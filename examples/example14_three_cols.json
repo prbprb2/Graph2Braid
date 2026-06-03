@@ -1,0 +1,8 @@
+{
+  "description": "Example 14: Three vertices in row 0, two horizontal edges",
+  "vertices": [[0,0],[0,1],[0,2]],
+  "edges": [
+    [[0,0],[0,1]],
+    [[0,1],[0,2]]
+  ]
+}

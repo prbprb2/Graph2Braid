@@ -1,0 +1,10 @@
+{
+  "description": "Example 4: Single edge with weight 2 (two parallel edges between (0,0) and (0,1))",
+  "vertices": [
+    [0, 0],
+    [0, 1]
+  ],
+  "edges": [
+    [[0,0], [0,1], 2]
+  ]
+}

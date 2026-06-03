@@ -1,0 +1,9 @@
+{
+  "description": "Example 17: Triangle with mixed weights — horizontal weight 1, diagonal weight 2",
+  "vertices": [[0,0],[1,0],[0,1]],
+  "edges": [
+    [[0,0],[1,0]],
+    [[0,0],[0,1],1],
+    [[1,0],[0,1],2]
+  ]
+}

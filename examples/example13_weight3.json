@@ -1,0 +1,7 @@
+{
+  "description": "Example 13: Single edge with weight 3",
+  "vertices": [[0,0],[0,1]],
+  "edges": [
+    [[0,0],[0,1],3]
+  ]
+}

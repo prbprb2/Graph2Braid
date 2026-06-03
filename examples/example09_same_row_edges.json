@@ -1,0 +1,10 @@
+{
+  "description": "Example 9: Rectangle — same-row (horizontal) edges only",
+  "vertices": [[0,0],[1,0],[0,1],[1,1]],
+  "edges": [
+    [[0,0],[1,0]],
+    [[0,1],[1,1]],
+    [[0,0],[0,1]],
+    [[1,0],[1,1]]
+  ]
+}

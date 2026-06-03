@@ -1,0 +1,9 @@
+{
+  "description": "Example 8: Down-right diagonal — (0,0)-(1,1) plus horizontal (0,0)-(0,1)",
+  "vertices": [[0,0],[0,1],[1,1]],
+  "edges": [
+    [[0,0],[0,1]],
+    [[0,0],[1,1]],
+    [[0,1],[1,1]]
+  ]
+}

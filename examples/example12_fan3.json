@@ -1,0 +1,11 @@
+{
+  "description": "Example 12: Fan — three col-0 vertices all connected to (0,1)",
+  "vertices": [[0,0],[1,0],[2,0],[0,1]],
+  "edges": [
+    [[0,0],[1,0]],
+    [[1,0],[2,0]],
+    [[0,0],[0,1]],
+    [[1,0],[0,1]],
+    [[2,0],[0,1]]
+  ]
+}

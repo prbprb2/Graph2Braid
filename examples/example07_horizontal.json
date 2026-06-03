@@ -1,0 +1,7 @@
+{
+  "description": "Example 7: Two vertices, one horizontal edge",
+  "vertices": [[0,0],[0,1]],
+  "edges": [
+    [[0,0],[0,1]]
+  ]
+}

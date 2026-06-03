@@ -1,0 +1,8 @@
+{
+  "description": "Example 15: L-shape with horizontal edge only — no diagonal",
+  "vertices": [[0,0],[1,0],[0,1]],
+  "edges": [
+    [[0,0],[1,0]],
+    [[0,0],[0,1]]
+  ]
+}

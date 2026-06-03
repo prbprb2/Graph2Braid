@@ -1,0 +1,5 @@
+{
+  "description": "Example 5: Single vertex (0,0) — trivial graph",
+  "vertices": [[0,0]],
+  "edges": []
+}
