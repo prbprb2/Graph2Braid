@@ -19,7 +19,7 @@ BQP-complete at most roots of unity.
 ## What it looks like
 
 ```
-$ python Graph2Braid.py examples/example01_triangle.json
+$ python Graph2Braid.py example01_triangle.json
 ```
 
 ```
@@ -55,14 +55,16 @@ Raw pairs   : [(2, -2)]
 1     2     3     4
 ```
 
-A JPG figure is also saved to the `JPGs/` directory.
+A JPG figure is also saved to the `JPGs/` directory:
+
+![Triangle example](JPGs/example01_triangle.jpg)
 
 ---
 
 ## Installation
 
 ```bash
-git clone https://github.com/prbprb2/Graph2Braid.git
+git clone https://github.com/your-username/Graph2Braid.git
 cd Graph2Braid
 pip install matplotlib          # only dependency
 ```
@@ -116,7 +118,7 @@ also be a vertex (Definition 2.1, rule 3). The tool will warn if this is violate
 
 ## Examples
 
-Nineteen worked examples are included in the `examples/` directory:
+Nineteen worked examples are included as JSON files:
 
 | File | Graph | Braid group | Braid word |
 |------|-------|-------------|------------|
@@ -133,7 +135,7 @@ Nineteen worked examples are included in the `examples/` directory:
 Run all examples at once:
 
 ```bash
-for f in examples/example*.json; do python Graph2Braid.py $f; done
+for f in example*.json; do python Graph2Braid.py $f; done
 ```
 
 Bind all figures in `JPGs/` into a single PDF:
@@ -164,12 +166,38 @@ This guarantees the plat closure is an alternating link (Lemma 4.1 of the paper)
 
 ---
 
+## Borromean rings note
+
+The Borromean rings is the trace closure of (σ₁·σ₂⁻¹)³·σ₃ in B₄.
+It does **not** arise from a triangular graph — the paper's algorithm outputs
+braids in B_{2m} (even strands) for plat closures, while the Borromean rings
+naturally lives in B₃ (odd strands). The extra σ₃ is a Markov stabilisation.
+This is demonstrated in the companion Colab notebook `braid_calculator.py`.
+
+---
+
+## Google Colab notebook
+
+`braid_calculator.py` is structured as a four-cell Colab notebook:
+
+| Cell | Purpose |
+|------|---------|
+| Cell 1 | Algorithm functions — run once |
+| Cell 2 | Define your graph (edit this cell) |
+| Cell 3 | Compute and display the braid |
+| Cell 4 | Borromean rings reference example |
+
+Open it in Colab, paste each cell, and share the notebook link with your group.
+
+---
+
 ## Files
 
 ```
 Graph2Braid.py          CLI tool — graph JSON → braid word + figures
 rebind_pdf.py           Bind all JPGs in JPGs/ into a single PDF
-examples/               19 worked example graphs (JSON)
+braid_calculator.py     Google Colab notebook version
+example*.json           19 worked example graphs
 JPGs/                   Output figures (created automatically)
 ```
 
