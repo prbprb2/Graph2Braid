@@ -158,11 +158,19 @@ def compute_braid(vertices, edges_input, verbose=False):
             for key in list(edge_dict):         # list() avoids mutation issues
                 vs = list(key)
                 if {vs[0][0], vs[1][0]} == target:
-                    # put lower-column vertex first
-                    if vs[0][1] <= vs[1][1]:
-                        Edge(vs[0], vs[1])
+                    if i == k:
+                        # same-row edge: lower-column vertex first
+                        if vs[0][1] <= vs[1][1]:
+                            Edge(vs[0], vs[1])
+                        else:
+                            Edge(vs[1], vs[0])
                     else:
-                        Edge(vs[1], vs[0])
+                        # cross-row edge: row-i vertex first
+                        # (so that Vertex is called on the row-k endpoint)
+                        if vs[0][0] == i:
+                            Edge(vs[0], vs[1])
+                        else:
+                            Edge(vs[1], vs[0])
 
     return word, num_strands
 
