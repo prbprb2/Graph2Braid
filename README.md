@@ -120,13 +120,13 @@ Nineteen worked examples are included in the `examples/` directory:
 
 | File | Graph | Braid group | Braid word |
 |------|-------|-------------|------------|
-| `example01_triangle.json` | Triangle | B₄ | σ₂⁻² |
+| `example01_triangle.json` | Triangle | B₄ | σ₂⁻¹·σ₁·σ₂⁻¹ |
 | `example02_single_edge.json` | Single edge | B₄ | σ₂⁻¹ |
-| `example03_staircase.json` | 3-row staircase | B₆ | σ₂⁻¹·σ₄⁻¹·σ₂⁻¹·σ₄⁻¹·σ₁·σ₃·σ₂⁻² |
+| `example03_staircase.json` | 3-row staircase | B₆ | σ₂⁻¹·σ₄⁻¹·σ₁·σ₂⁻¹·σ₃·σ₄⁻¹·σ₁·σ₂⁻² |
 | `example04_double_edge.json` | Weight-2 edge | B₄ | σ₂⁻² |
 | `example05_single_vertex.json` | Single vertex | B₂ | (identity) |
 | `example07_horizontal.json` | Horizontal edge | B₄ | σ₂⁻¹ |
-| `example12_fan3.json` | Fan (3 spokes) | B₄ | σ₂⁻³ |
+| `example12_fan3.json` | Fan (3 spokes) | B₄ | σ₂⁻¹·σ₁·σ₂⁻¹·σ₁²·σ₂⁻¹ |
 | `example14_three_cols.json` | Row of 3 | B₆ | σ₂⁻¹·σ₄⁻¹ |
 | … | … | … | … |
 
